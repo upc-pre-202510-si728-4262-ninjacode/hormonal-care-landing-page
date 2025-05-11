@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HormonalCare</title>
+    
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/styles/loginStyle.css">
+    <script src="assets/scripts/script.js"></script>
+    
+</head>
+<body>
+    <!--Nav bar-->
+    <section class="nav-barbar-large">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/HormonalCareLogo.png" alt="HormonalCareLogo" />
+                <span> <a href="index.html">HormonalCare</a></span>
+            </div>
+            <button class="hamburger-icon" onclick="toggleNav()">☰</button>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#swiper-section" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#plans-section" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#section-contact-us" class="nav-link">Contact us</a></li>
+                <li class="nav-item"><a href="#more-information" class="nav-link">About us</a></li>
+            </ul>
+            <a href='https://main--stupendous-kangaroo-4e2bfa.netlify.app'>
+                <button class="button-try-free">Try it Free</button>
+            </a>
+            <div class="button-to-translate">
+                <button onclick="window.location.href='assets/indexs/indexES.html'">ES</button>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <!--Main section -->
+
+    <section id="main" class = "main">
+        <div class="main-image">
+            <img src="assets/images/WelcomToHormonalCare.png" alt="WelcomToHormonalCare" />
+        </div>
+    </section>
+
+    <!-- Pitch Message Section -->
+    <section id="pitch-message" class="pitch-message">
+        <div class="container">
+            <h1>Discover HormonalCare</h1>
+            <p>Enhance patient tracking with our platform dedicated to the efficient management of hormonal diseases. With HormonalCare, you gain access to personalized tools that ease monitoring and treatment, saving you time and improving your patients' outcomes.</p>
+            <button onclick="location.href='http://40.76.139.35'">Try HormonalCare for Free</button>
+        </div>
+    </section>
+
+
+    <!--Features-->
+    <section id= "swiper-section" class="swiper-section">
+        <div class="title-swiper">
+            <h1>Features</h1>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper swiper-hero">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="assets/images/Feature1.png"
+                        alt=""
+                    />
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/Feature2.png"
+                        alt=""
+                    />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/Feature3.png"
+                        alt=""
+                    />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/Feature4.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    
+    </section>
+
+  
+
+    <!--Pricing-->
+
+    <section id="plans-section" class="plans-section">
+        <h1>Pricing </s></h1>
+        <p class="description">You can choose the plan that best suits your needs. HormonalCare has three subscription plans and offers a free trial.</p>
+        
+        
+        <div class="plans-container">
+          <!-- Basic -->
+          <div class="plan-card-basic">
+            <h2>Basic</h2>
+            <p class="price">S/. 10 <span>/month</span></p>
+            <p class="plan-description">Perfect for the beginers</p>
+            <ul class="plan-features">
+              <li>Register up to 5 patients</li>
+
+            </ul>
+            <button class="plan-button-basic">Suscribe</button>
+          </div>
+          
+          <!--Regular -->
+          <div class="plan-card-regular-featured">
+            <h2>Regular</h2>
+            <p class="price">S/. 30.00 <span>/month</span></p>
+            <p class="plan-description">The most popular</p>
+            <ul class="plan-features-regular">
+              <li>Register up to 25 patients</li>
+              
+            </ul>
+            <button class="plan-button-regular">Suscribe</button>
+          </div>
+          
+          <!--Premium -->
+          <div class="plan-card-premium">
+            <h2>Premium</h2>
+            <p class="price">S/. 80.00 <span>/month</span></p>
+            <p class="plan-description">The best for the profesionals</p>
+            <ul class="plan-features">
+              <li>Register up to ilimitado patients</li>
+              
+            </ul>
+            <button class="plan-button-premium">Suscribe</button>
+          </div>
+        </div>
+    </section>
+
+
+    
+    <!--(contact us)-->
+    <section id="section-contact-us" class="section-contact-us">
+        <div class="contact-section-form-contact" style="background-image: url('assets/images/fondito.png');">
+            <div class="contact-content">
+              <div class="contact-form">
+                <h1>Contact us</h1>
+                <form action="submit_form.php" method="post">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Write your name here" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Write your email here" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">How can we help you?</label>
+                    <textarea id="message" name="message" placeholder="Write a message here" required></textarea>
+                  </div>
+                  <button type="submit" class="submit-btn">Send</button>
+                </form>
+              </div>
+          </div>
+        </div>
+    </section>
+    
+    <!--About us-->
+    <section id="more-information" class="more-information">
+        <div class ="more-information-container">
+            <div class="text-inside-about-us">
+                <div class ="know-more">Know more</div>
+            <div class="about-us">About us</div>
+            <div class="welcome">
+                <p>
+                    NinjaCode is a startup made up of students from the Faculty of Engineering and Sciences of the Peruvian University of Applied Sciences (UPC), dedicated to optimizing medical follow-ups. Our vision is to address the existing challenges in the Peruvian healthcare system, especially in the monitoring of hormonal diseases.
+                </p>
+            </div>
+            </div>
+            
+            <div class="logo-Ninjacode">
+                <img src="assets/images/NinjaCodeLogo.jpg" alt="NinjaCodeLogo" />
+            </div>
+        
+        
+    </section>
+
+    
+    
+    <section id="video-section" class="video-section" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+        <h1 style="align-self: flex-start; margin-left: 10%;">About the Product</h1>
+        <div class="video-container">
+            <iframe width="640" height="390" src="https://www.youtube.com/embed/Eg2EyFeUo_g" title="upc-pre-202402-cc238-sw63-NinjaCode-about-the-product-sprint-4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    
+    <section id="video-section" class="video-section" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+        <h1 style="align-self: flex-start; margin-left: 10%;">About the Team </h1>
+        <div class="video-container">
+            <iframe width="640" height="390" src="https://www.youtube.com/embed/DnfOV7qsQBs" title="upc pre 202401 si729 SW51 NinjaCode about the team sprint 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+   
+
+
+    <!--Footer-->
+    <footer class="main-footer">
+        <div class="group-1">
+            <div class="box">
+                <h2>Members of NINJACODE</h2>
+                <ul class="member-Ninjacode">
+                    <li>Jherson Astuyauri</li>
+                    <li>Sandro Quipesivana</li>
+                    <li>Luis Chinchihualpa</li>
+                    <li>Estefano Lostaunau</li>
+                </ul>
+
+            </div>
+            <div class="box">
+                <h2>Technologies</h2>
+                
+                <ul class="tecnologies-HormonalCare">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Dart</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>FOLLOW US</h2>
+                <div class="social-media">
+                    <a href="#" class="Github"><i class="fab fa-github"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="group-2">
+            <small>&copy; 2024 <b>HormonalCare</b> - All rights reserved.</small>
+        </div>
+    </footer>
+
+
+    <!--Links-->
+
+    <script src="assets/scripts/loginScript.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/5f7875a9e1.js" crossorigin="anonymous"></script>
+</body>
+</html>

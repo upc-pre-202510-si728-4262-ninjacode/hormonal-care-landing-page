@@ -1,1 +1,1 @@
-# hormonal-care-landing-page
+This is the repository of the Landing Page of HormonalCare
